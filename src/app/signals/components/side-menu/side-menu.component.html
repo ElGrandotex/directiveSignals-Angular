@@ -1,0 +1,21 @@
+<ul class="list-group">
+  <!-- FORMA TRADICIONAL -->
+  <!-- <li *ngFor="let item of menuItems" class="list-group-item"
+  [routerLink]="item.router"
+  routerLinkActive="active"
+  >
+    {{ item.title }}
+  </li> -->
+
+  <!-- CON SEñALES -->
+  <li *ngFor="let item of menuItems()" class="list-group-item"
+  [routerLink]="item.router"
+  routerLinkActive="active"
+  >
+    {{ item.title }}
+  </li>
+
+</ul>
+
+<!-- {{menuItems}}
+{{menuItems()}} -->
